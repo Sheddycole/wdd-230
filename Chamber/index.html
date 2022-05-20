@@ -43,15 +43,74 @@
         </div>
     </header>
     <main>
-        <div class="placeholder-item hero">Hero with site name and call to action</div>
-        <div class="placeholder-item event">Event</div>
-        <div class="placeholder-item weather">Weather</div>
-        <div class="placeholder-item join">join</div>
-        <div class="placeholder-item news">News Release</div>
-        <div class="placeholder-spotlights">
-            <div class="spotlight">Spotlight 1</div>
-            <div class="spotlight">Spotlight 2</div>
-            <div class="spotlight">Spotlight 3</div>
+        <main>
+
+            <section id="main_hero">
+                <picture>
+                    <source class="image_medium" srcset="images/welcome_medium.webp" media="(min-width:500px) and (max-width: 1023px)">
+                    <source srcset="images/welcome_small.webp" media="(min-width:200px) and (max-width: 599px)">
+                    <img src="images/welcome_large.webp" alt="A view of Inland Valley ">
+                </picture>
+                <p class="welcome"><strong>Welcome to Inland Valley</strong></p>
+                <a class="action" href="join.html">Join the Chamber</a>
+            </section>
+            <section id="main_event">
+                <h2 class="event">Ribbon Cutting</h2>
+                <h2 class="event_1"> The Veronica's Diner 🥰</h2>
+                <img class="event_3" src="images/event.webp" alt="Veronica's diner logo" width="80" height="65">
+                <p class="event_2">Join us for the ground opening of The Veronica's Diner, Friday at 3p.m. <a class="link1" href=""> more info....</a> </p>
+            </section>
+            <section id="main_weather">
+                <h2 class="weather_1"> Inland Valley Weather</h2>
+                <figure><img src="" alt="weather_icon" id="weathericon" />
+                    <figcaption id="weathercap"></figcaption>
+                </figure>
+                <hr class="weather_4">
+                <p class="temp">Temperature: <span id="temp"></span>&deg;F<br></p>
+                <p class="speed">Wind Speed: <span id="speed"></span> mph<br></p>
+                <p class="windchill">Wind Chill: <span id="windchill"></span></p>
+                <p class="humidity">Humidity: <span id="humidity"></span>%</p>
+                <script src="js/windchill.jsx">
+                </script>
+
+            </section>
+            <section id="main_news">
+                <h3> News Release</h3>
+                <p> The Statistics and Population Ministry of Inland Valley has released a detailed report for 2021 "The population of the Inland Valley stands at 58,000 with a total number of 1080 deaths, and 2800 newborns in the town as at December 2021.
+                    The number of private businesses in the valley stands at 8,692 with 758 new businesses as of December 2021. The Inland Valley spent $458 Million in imports and exports for the year 2021 leaving her treasury at $567 Million with 30%
+                    increase in the last 12 months." <a class="link2" href="">Read more here...</a>
+                </p>
+            </section>
+            <section id="main_join">
+                <p id="join"> Discover how to join the chamber of commerce and how it will benefit your organization! </p>
+                <a class="join" href="join.html">Join Us!</a>
+            </section>
+            <section id="main_spotlight">
+                <div>
+                    <h3>Jennnifer's Real Estate</h3>
+                    <img src="images/spotlight_1.webp" alt="real estate icon" width="70" height="70">
+                    <p> Real prices you can trust!</p>
+                    <a class="link3" href="">www.realestatewithjenn.com</a>
+                    <p> Tel: +234-810-234-9581</p>
+                    <hr class="">
+                </div>
+                <div>
+                    <h3>Code with Cole's</h3>
+                    <img src="images/spotlight_2.webp" alt="coding icon" width="70" height="70">
+                    <p>An intensive programming class</p>
+                    <a class="link4" href="">www.codewithcole.com</a>
+                    <p> Tel: +234-813-713-2047</p>
+                    <hr class="">
+                </div>
+                <div>
+                    <h3>Suave's River Rafting</h3>
+                    <img src="images/spotlight_3.webp" alt="river rafting icon" width="70" height="70">
+                    <p>One of a kind Adventure!</p>
+                    <a class="link5" href="">www.adventurewithsuave.com</a>
+                    <p> Tel: +234-704-123-0319</p>
+                    <hr class="">
+                </div>
+            </section>
         </div>
     </main>
     <footer>
