@@ -41,76 +41,56 @@
         <div id="header-date">
             <!-- JS! -->
         </div>
+    <div class="banner hide"><p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
     </header>
     <main>
-        <main>
-
-            <section id="main_hero">
-                <picture>
-                    <source class="image_medium" srcset="images/welcome_medium.webp" media="(min-width:500px) and (max-width: 1023px)">
-                    <source srcset="images/welcome_small.webp" media="(min-width:200px) and (max-width: 599px)">
-                    <img src="images/welcome_large.webp" alt="A view of Inland Valley ">
-                </picture>
-                <p class="welcome"><strong>Welcome to Inland Valley</strong></p>
-                <a class="action" href="join.html">Join the Chamber</a>
-            </section>
-            <section id="main_event">
-                <h2 class="event">Ribbon Cutting</h2>
-                <h2 class="event_1"> The Veronica's Diner 🥰</h2>
-                <img class="event_3" src="images/event.webp" alt="Veronica's diner logo" width="80" height="65">
-                <p class="event_2">Join us for the ground opening of The Veronica's Diner, Friday at 3p.m. <a class="link1" href=""> more info....</a> </p>
-            </section>
-            <section id="main_weather">
-                <h2 class="weather_1"> Inland Valley Weather</h2>
-                <figure><img src="" alt="weather_icon" id="weathericon" />
-                    <figcaption id="weathercap"></figcaption>
-                </figure>
-                <hr class="weather_4">
-                <p class="temp">Temperature: <span id="temp"></span>&deg;F<br></p>
-                <p class="speed">Wind Speed: <span id="speed"></span> mph<br></p>
-                <p class="windchill">Wind Chill: <span id="windchill"></span></p>
-                <p class="humidity">Humidity: <span id="humidity"></span>%</p>
-                <script src="js/windchill.jsx">
-                </script>
-
-            </section>
-            <section id="main_news">
-                <h3> News Release</h3>
-                <p> The Statistics and Population Ministry of Inland Valley has released a detailed report for 2021 "The population of the Inland Valley stands at 58,000 with a total number of 1080 deaths, and 2800 newborns in the town as at December 2021.
-                    The number of private businesses in the valley stands at 8,692 with 758 new businesses as of December 2021. The Inland Valley spent $458 Million in imports and exports for the year 2021 leaving her treasury at $567 Million with 30%
-                    increase in the last 12 months." <a class="link2" href="">Read more here...</a>
-                </p>
-            </section>
-            <section id="main_join">
-                <p id="join"> Discover how to join the chamber of commerce and how it will benefit your organization! </p>
-                <a class="join" href="join.html">Join Us!</a>
-            </section>
-            <section id="main_spotlight">
-                <div>
-                    <h3>Jennnifer's Real Estate</h3>
-                    <img src="images/spotlight_1.webp" alt="real estate icon" width="70" height="70">
-                    <p> Real prices you can trust!</p>
-                    <a class="link3" href="">www.realestatewithjenn.com</a>
-                    <p> Tel: +234-810-234-9581</p>
-                    <hr class="">
-                </div>
-                <div>
-                    <h3>Code with Cole's</h3>
-                    <img src="images/spotlight_2.webp" alt="coding icon" width="70" height="70">
-                    <p>An intensive programming class</p>
-                    <a class="link4" href="">www.codewithcole.com</a>
-                    <p> Tel: +234-813-713-2047</p>
-                    <hr class="">
-                </div>
-                <div>
-                    <h3>Frank's River Rafting</h3>
-                    <img src="images/spotlight_3.webp" alt="river rafting icon" width="70" height="70">
-                    <p>One of a kind Adventure!</p>
-                    <a class="link5" href="">www.adventurewithsuave.com</a>
-                    <p> Tel: +234-704-123-0319</p>
-                    <hr class="">
-                </div>
-            </section>
+        <div class="block hero">
+            <h2>Welcome to the <span>Inland Valley</span></h2>
+            <button>Join the Chamber</button>
+        </div>
+        <div class="block event sub">
+            <h2>Ribbon Cutting</h2>
+            <h3>Gatemark Group</h3>
+            <p>Join us for the grand opening of Gatemark Group, Friday at 2:00p.m</p>
+        </div>
+        <div class="block weather sub">
+            <h2>Weather</h2>
+            <img src="images/weather.png" alt="sunny icon">
+            <h3>28 °C</h3>
+            <hr>
+            <p>Wind Speed:<span>2.5 km/h</span></p>
+            <p>Wind Chill:<span>N/A</span></p>
+        </div>
+        <div class="block join">
+            <button>Join Us!</button>
+            <p>Discover how to join the inalnd valley chamber of commerce and how we work!</p>
+        </div>
+        <div class="block news sub">
+            <h2>Upcoming Event</h2>
+            <p>We at Inland Valley would love to cordially invite you for the next conference. 
+            </p>
+        </div>
+        <div class="placeholder-spotlights" id="spotlights">
+            <div class="spotlight">
+                <h2>Luscious hairs</h2>
+                <img src="images/Luscious hair.png" alt="Luscious logo">
+                <hr>
+                <p>info@luscious.com</p>
+                <p>+1 (303) 346 5673 | Website</p>
+            </div>
+            <div class="spotlight">
+                <h2>Rebecca's Diner</h2>
+                <img src="images/rebeca.jfif" alt="Rebecca Diner logo">
+                <hr>
+                <p>www.rebeccadiner@yahoo.com</p>
+                <p>+1 (876) 456 9876 | Website</p>
+            </div>
+            <div class="spotlight spot-3" id="spot-3">
+                <h2>Gatemark</h2>
+                <img src="images/gatemark.png" alt="arnegy logo">
+                <hr>
+                <p>info@gatemarkgroup.com</p>
+                <p>+234 123 -1234 | Website</p></div>
         </div>
     </main>
     <footer>
@@ -138,6 +118,8 @@
         </div>
     </footer>
     <script src="Script/script.js"></script>
+    <script src="Script/windchill.js" defer></script>
+    <script src="Script/spotlight.js" defer></script>
 </body>
 
 </html>
