@@ -57,10 +57,21 @@ button span {
 }
 
 .hero {
-    background: url("../images/Join-mount.jpg"), rgba(128, 128, 128, 0.678);
-    background-blend-mode: darken;
-    background-position: center;
-    background-size: cover;
+    /*background: url("../images/Join-mount.jpg"), rgba(128, 128, 128, 0.678);*/
+    /*background-blend-mode: darken;*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    display: grid;
+    grid-template-columns: repeat(1fr 2);
+    grid-template-rows: 60% 1fr;
+    overflow: hidden;
+}
+main div#hero{padding: 0px;}
+#heroPhoto{
+    z-index: -1;
+    grid-row: 1/-1;
+    grid-column: 1/3;
+    width: 100%;
 }
 
 .hero h2,
@@ -76,15 +87,17 @@ button span {
     color: #FFB30F;
 }
 
-.hero button {
+.hero button#join-btn {
     font-family: 'Open sans', monospace;
     background-color: #141516;
     padding: 1rem;
-    color: rgb(55, 34, 114);
+    margin: 1rem;
+    color: #088dda;
     box-shadow: 0px 0px 5px black;
-    position: absolute;
-    right: 2rem;
-    bottom: auto;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 3rem;
+    max-width: 18rem;
 }
 
 .sub {
@@ -128,6 +141,14 @@ button.open :nth-child(2) {
 
 button :nth-child(2) {
     display: none;
+}
+
+#header-date {
+    margin-top: 3rem;
+    grid-column: 1/4;
+    color: #FFB30F;
+    text-align: center;
+    height: 1rem;
 }
 
 .header-grid {
