@@ -33,3 +33,29 @@ let modsecond = lastModifiedDate.getSeconds()
 let modhour = lastModifiedDate.getHours(); 
 
 modEl.innerHTML = `Last Updated: ${modMonth}/${modDay}/${modYear} ${modhour}:${modminute}:${modsecond}`
+
+// set active
+
+function active() {
+    switch (document.title) {
+      case "Inland Chamber of Commerce":
+        document.querySelector("#home").classList.add("active");
+        break;
+  
+      case "Inland Chamber of Commerce - Discover":
+        document.querySelector("#discover").classList.add("active");
+        break;
+  
+      case "Inland Chamber of Commerce - Join":
+        document.querySelector("#join").classList.add("active");
+        break;
+  
+      case "Inland Chamber of Commerce - Directory":
+        document.querySelector("#directory").classList.add("active");
+        break;
+  
+      case "Inland Chamber of Commerce - Contact":
+        document.querySelector("#contact").classList.add("active");
+        break;
+    }
+  }
