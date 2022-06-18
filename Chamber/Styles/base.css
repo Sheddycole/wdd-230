@@ -576,118 +576,34 @@ nav ul li a:hover,
 button span:hover {
      color: #f1e8d4;
 }
-/* -------------------------------------Uyo Business Directory Page-----------------------------------------------*/
-
-.cards {
-  margin: 10px 0 40px 0;
+/* Directory Page */
+.company{
   display: grid;
-  grid-template-columns: 1fr;
-  background-color: rgb(255, 255, 255);
-  grid-gap: 5px;
-  padding: 25px 5px;
-
+  justify-items: center;
+  padding:2.5rem;
   text-align: center;
 }
-.business {
-  text-align: center;
-  margin-top: 40px;
+.company-img{
+  width: 180px;
 }
-.card {
-  margin: 15px;
-
-  padding: 0;
-  background-color: #ffffff;
-  box-shadow: 0 3px 8px 10px #f1f1f1;
-  border-radius: 2px;
-  padding: 20px 0;
+.company:nth-child(even){
+  background-color: #555;
+  color: whitesmoke;
+}
+.company ul{
+  list-style-type: none;
+  padding: 0px;
 }
 
-.card address {
-  color: #012a4a;
-  font-size: 1.6rem;
-  padding: 0 30px;
-  margin-bottom: -15px;
+.NP {
+  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(70%) contrast(119%);
 }
-
-.card p {
-  color: #012a4a;
-  font-size: 1.4rem;
-  margin-bottom: 1px;
+.Silver {
+  filter: invert(42%) sepia(93%) saturate(100%) hue-rotate(50deg) brightness(100%) contrast(50%);
 }
-.card a {
-  font-size: 1.4rem;
+.Gold {
+  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(10deg) brightness(119%) contrast(119%);
 }
-
-.card img {
-  width: 30%;
-  padding-bottom: 15px;
-  border-radius: 2px;
-}
-
-.list {
-  margin: 10px 0 40px 0;
-  display: block;
-  background-color: rgb(255, 255, 255);
-  padding: 25px 25px;
-}
-
-.list tr:nth-child(odd) {
-  background-color: #a9d6e5;
-}
-
-.list td {
-  color: #012a4a;
-  padding: 15px 10px;
-}
-.list tr .name {
-  margin-bottom: -20px;
-}
-.list tr .list-address {
-  font-size: 1.6rem;
-  margin-bottom: -25px;
-}
-
-.list tr .list-number {
-  font-size: 1.6rem;
-  margin-bottom: -36px;
-}
-
-.list tr {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: start;
-  padding: 15px 0 15px 0;
-  border-radius: 3px;
-}
-
-#address {
-  padding: 0 5px;
-}
-.switch {
-  text-align: center;
-  margin-top: 40px;
-}
-.switch button {
-  border: 2px solid #012a4a;
-  background-color: white;
-  padding: 5px 10px;
-  border-radius: 3px;
-  color: #012a4a;
-  font-size: 1.1rem;
-}
-
-.switch button:hover {
-  background-color: #a9d6e5;
-}
-
-.blockview {
-  display: block;
-  padding-top: 25px;
-  color: #012a4a;
-  font-weight: 700;
-}
-
-#membership {
-  font-weight: 500;
+.Bronze {
+  filter: invert(42%) sepia(180%) saturate(202%) hue-rotate(0deg) brightness(119%) contrast(119%);
 }
