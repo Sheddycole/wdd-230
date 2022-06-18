@@ -114,7 +114,7 @@ main div#hero{padding: 0px;}
 .weather {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 6rem 1fr 2px 1.2fr;
+    grid-template-rows: 1fr 6rem 1fr 2px, 1.2fr;
     max-width: 15rem;
 }
 
@@ -220,7 +220,7 @@ button :nth-child(2) {
 .header-grid {
     display: grid;
     grid-template-columns: 60% 1fr 1fr;
-    grid-template-rows: 1fr ;
+    grid-template-rows: 1fr fit-content;
     background-color: #132c46;
     color: whitesmoke;
     height: max-content;
