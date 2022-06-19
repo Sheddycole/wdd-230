@@ -531,6 +531,7 @@ footer {
     align-items: center;
     text-align: center;
     margin: 0;
+    grid-row: 1/-1;
 }
 
 .first-half {
@@ -582,6 +583,9 @@ button span:hover {
   justify-items: center;
   padding:2.5rem;
   text-align: center;
+}
+main{
+  grid-row: 1/-1;
 }
 .company-img{
   width: 180px;
