@@ -1,4 +1,4 @@
-const directoryUrl = "https://sheddycole.github.io/wdd230/Chamber/data/data.json";
+const directoryUrl = "https://kelvin-aj.github.io/wdd230/chamber/json/data.json";
 const directoryCont = document.querySelector(".directory-container");
 
 async function getandshowDirectory() {
