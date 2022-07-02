@@ -524,3 +524,71 @@ main{
 .Bronze {
   filter: invert(42%) sepia(180%) saturate(202%) hue-rotate(0deg) brightness(119%) contrast(119%);
 }
+/* Contact Page */
+iframe{
+  margin: 0 auto;
+  width: 80vw;
+  animation-name: slideup;
+  animation-duration: 1.2s;
+}
+.contact-main-area{
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+.contact-info, .talk{
+  animation-name: slideup;
+  animation-duration: 1.2s;
+  margin: 1rem;
+  display: grid;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #FFB30F;
+  text-align: center;
+  font-size: larger;
+}
+.talk{
+  font-size: 1.6rem;
+}
+.contact-form{
+  box-shadow: none;
+  background-color: whitesmoke;
+}
+.contact-form input, .contact-form textarea {
+  background-color: rgba(255, 255, 255, 0.247);
+}
+.contact-form .join-btn{
+  background-color: #042b42;
+}
+.contact-form .join-btn:hover{
+  transition: all 0.3s;
+  background-color: #141516;
+  color: #fab727;
+  font-weight: bolder;
+}
+.talk{
+  
+  padding: 1.2rem;
+}
+
+@keyframes slidein{
+  from{
+      transform: translateX(10vw);
+      opacity: 0%;
+  }
+}
+@keyframes slideinbtn{
+  from{
+      transform: translateX(-30vw);
+      opacity: 0%;
+  }
+}
+
+@keyframes slideup{
+  from{
+      transform: translateY(20vh);
+      opacity: 10%;
+  }
+}
